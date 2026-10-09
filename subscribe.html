@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisory Alerts Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Heatwave Alert Notification Signup</legend>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="user_name">
+
+            <label for="useremail">Email Address:</label>
+            <input type="email" id="useremail" name="user_email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="user_phone">
+
+            <label for="zone">Select Region:</label>
+            <select id="zone" name="user_region">
+                <option value="north">North Zone</option>
+                <option value="central">Central Zone</option>
+                <option value="south">South Zone</option>
+                <option value="west">West Zone</option>
+            </select>
+
+            <br><br>
+            <label>Communication Language:</label><br>
+            <input type="radio" id="lang_en" name="language" value="english">
+            <label for="lang_en">English</label><br>
+            <input type="radio" id="lang_hi" name="language" value="hindi">
+            <label for="lang_hi">Hindi</label><br>
+
+            <br>
+            <label>Notification Categories:</label><br>
+            <input type="checkbox" id="alert_hw" name="type_hw">
+            <label for="alert_hw">Heatwave Warnings</label><br>
+            <input type="checkbox" id="alert_wx" name="type_wx">
+            <label for="alert_wx">Daily Weather Updates</label><br>
+            <input type="checkbox" id="alert_em" name="type_em">
+            <label for="alert_em">Emergency Advisories</label><br>
+
+            <br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear Form">
+        </fieldset>
+    </form>
+
+</body>
+</html>
